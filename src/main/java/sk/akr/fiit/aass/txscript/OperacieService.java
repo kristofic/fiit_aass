@@ -14,22 +14,27 @@ public class OperacieService {
 
     // Transakcny scenar pre vytvorenie operacie
     public void vytvorOperaciu(OperaciaTO operaciaTO /* <-- transferovy objekt */) {
-        long idOperacie = operaciaDataService.vytvorOperaciu(operaciaTO); // --> volanie vrstvy datovych sluzieb
-        Set<String> kodyPoplatkov = typPoplatkuDataService.najdiTypyPoplatkov(operaciaTO.getTyp());
+        // volanie vrstvy datovych sluzieb
+        long idOperacie = operaciaDS.vytvorOperaciu(operaciaTO);
+        Set<String> kodyPoplatkov = typPoplatkuDS.najdiTypyPoplatkov(operaciaTO.getTyp());
 
         for (String kodPoplatku : kodyPoplatkov) {
-            SadzbaPoplatku sadzba = sadzbaPoplatkuDataService.najdiSadzbu(kodPoplatku, operaciaTO.getDatum(), operaciaTO.getSuma());
+            SadzbaPoplatku sadzba = sadzbaPoplatkuDS.najdiSadzbu(
+                kodPoplatku,
+                operaciaTO.getDatum(),
+                operaciaTO.getSuma()
+            );
             BigDecimal vyskaPoplatku = poplatkyService.vypocitajPoplatok(sadzba, operaciaTO);
-            poplatokDataService.vytvorPoplatok(idOperacie, sadzba.getIdSadzby(), vyskaPoplatku);
+            poplatokDS.vytvorPoplatok(idOperacie, sadzba.getIdSadzby(), vyskaPoplatku);
         }
 
     }
 
     private PoplatkyService poplatkyService = new PoplatkyService();
 
-    private OperaciaDataService operaciaDataService = new OperaciaDataService();
-    private TypPoplatkuDataService typPoplatkuDataService = new TypPoplatkuDataService();
-    private SadzbaPoplatkuDataService sadzbaPoplatkuDataService = new SadzbaPoplatkuDataService();
-    private PoplatokDataService poplatokDataService = new PoplatokDataService();
+    private OperaciaDataService operaciaDS = new OperaciaDataService();
+    private TypPoplatkuDataService typPoplatkuDS = new TypPoplatkuDataService();
+    private SadzbaPoplatkuDataService sadzbaPoplatkuDS = new SadzbaPoplatkuDataService();
+    private PoplatokDataService poplatokDS = new PoplatokDataService();
 
 }
