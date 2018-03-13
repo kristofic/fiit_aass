@@ -1,6 +1,6 @@
 package sk.akr.fiit.aass.txscript;
 
-import sk.akr.fiit.aass.txscript.datamodel.OperaciaTO;
+import sk.akr.fiit.aass.to.OperaciaTO;
 import sk.akr.fiit.aass.txscript.datamodel.SadzbaPoplatku;
 import sk.akr.fiit.aass.txscript.dataservice.OperaciaDataService;
 import sk.akr.fiit.aass.txscript.dataservice.PoplatokDataService;

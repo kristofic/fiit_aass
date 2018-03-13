@@ -2,7 +2,7 @@ package sk.akr.fiit.aass.txscript.dataservice;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import sk.akr.fiit.aass.txscript.datamodel.OperaciaTO;
+import sk.akr.fiit.aass.to.OperaciaTO;
 
 public class OperaciaDataService {
 

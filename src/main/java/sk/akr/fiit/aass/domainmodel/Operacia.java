@@ -2,7 +2,7 @@ package sk.akr.fiit.aass.domainmodel;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import sk.akr.fiit.aass.domainmodel.to.OperaciaTO;
+import sk.akr.fiit.aass.to.OperaciaTO;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

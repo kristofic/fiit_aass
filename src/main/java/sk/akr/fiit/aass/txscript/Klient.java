@@ -1,6 +1,6 @@
 package sk.akr.fiit.aass.txscript;
 
-import sk.akr.fiit.aass.txscript.datamodel.OperaciaTO;
+import sk.akr.fiit.aass.to.OperaciaTO;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

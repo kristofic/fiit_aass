@@ -1,4 +1,4 @@
-package sk.akr.fiit.aass.txscript.datamodel;
+package sk.akr.fiit.aass.to;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
