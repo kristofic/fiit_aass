@@ -1,0 +1,8 @@
+<assembly-descriptor>
+    <!-- Aplikovanie interceptora na vsetky EJB komponenty -->
+    <interceptor-binding>
+        <ejb-name>*</ejb-name>
+        <interceptor-class>sk.akr.fiit.aass.interceptor.AuditInterceptor</interceptor-class>
+    </interceptor-binding>
+
+</assembly-descriptor>
