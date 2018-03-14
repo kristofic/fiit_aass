@@ -42,7 +42,6 @@ public class OperaciaTO {
         this.protiucetIban = protiucetIban;
     }
 
-    @Override
     public String toString() {
         return "OperaciaTO{" +
                 "typ='" + typ + '\'' +

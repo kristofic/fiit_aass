@@ -18,7 +18,6 @@ public class OperacieServiceBean implements OperacieService {
     @Inject
     private SmsService smsService;
 
-    @Override
     public void vytvorOperaciu(OperaciaTO operaciaTO) {
         Operacia operacia = new Operacia(operaciaTO);
         operacia.vypocitajPoplatky();

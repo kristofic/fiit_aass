@@ -8,7 +8,6 @@ public class SazbaPoplatkuOhranicena extends SadzbaPoplatku {
     private BigDecimal minSadzba;
     private BigDecimal maxSadzba;
 
-    @Override
     protected BigDecimal vypocitajVyskuPoplatku(Operacia operacia) {
         BigDecimal vyskaPoplatku = super.vypocitajVyskuPoplatku(operacia);
         if (vyskaPoplatku.compareTo(minSadzba) < 0) {

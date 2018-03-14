@@ -10,8 +10,6 @@ import java.time.LocalDate;
 
 public class SadzbaPoplatkuDataService {
 
-    private static final Logger log = LogManager.getLogger();
-
     public SadzbaPoplatku najdiSadzbu(String kodPoplatku, LocalDate datum, BigDecimal suma) {
         log.info("Vyhladavam sadzbu pre poplatok {}, datum {}, suma {}", kodPoplatku, datum, suma);
         // vyhladanie sadzby poplatku v databaze podla kriterii
@@ -27,4 +25,6 @@ public class SadzbaPoplatkuDataService {
             LocalDate.now().plusDays(1)
         );
     }
+
+    private static final Logger log = LogManager.getLogger();
 }

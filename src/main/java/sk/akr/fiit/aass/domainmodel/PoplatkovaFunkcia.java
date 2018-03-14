@@ -9,7 +9,6 @@ import java.math.BigDecimal;
 public enum PoplatkovaFunkcia {
 
     POPLATOK_FIXNY {
-        @Override
         public BigDecimal vypocitajPoplatok(SadzbaPoplatku sadzba, BigDecimal sumaOperacie) {
             log.info("Vypocet vysky poplatku pre sumu operacie {} so sadzbou {}", sumaOperacie, sadzba);
             return sadzba.getSadzba();
@@ -17,7 +16,6 @@ public enum PoplatkovaFunkcia {
     },
 
     POPLATOK_PERCENTUALNY {
-        @Override
         public BigDecimal vypocitajPoplatok(SadzbaPoplatku sadzba, BigDecimal sumaOperacie) {
             log.info("Vypocet vysky poplatku pre sumu operacie {} so sadzbou {}", sumaOperacie, sadzba);
             return sumaOperacie.multiply(sadzba.getSadzba());

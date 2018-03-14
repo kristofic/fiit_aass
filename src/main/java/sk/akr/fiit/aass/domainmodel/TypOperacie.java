@@ -33,7 +33,6 @@ public class TypOperacie {
         return typyPoplatkov;
     }
 
-    @Override
     public String toString() {
         return "TypOperacie{" +
                 "kod='" + kod + '\'' +

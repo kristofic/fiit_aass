@@ -8,7 +8,6 @@ public class SazbaPoplatkuHladinova extends SadzbaPoplatku {
     private BigDecimal sumaOperacieOd;
     private BigDecimal sumaOperacieDo;
 
-    @Override
     public boolean jeAplikovatelna(Operacia operacia) {
         return super.jeAplikovatelna(operacia) &&
             operacia.getSuma().compareTo(sumaOperacieOd) > 0 &&

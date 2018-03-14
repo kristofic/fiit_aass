@@ -62,7 +62,7 @@ public class Operacia {
         return datum;
     }
 
-    @Override
+
     public String toString() {
         return "Operacia{" +
                 "typOperacie=" + typOperacie +

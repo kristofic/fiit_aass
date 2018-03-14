@@ -76,7 +76,6 @@ public class SadzbaPoplatku {
         return poplatkovaFunkcia;
     }
 
-    @Override
     public String toString() {
         return "SadzbaPoplatku{" +
                 "sadzba=" + sadzba +

@@ -22,8 +22,7 @@ public class Poplatok {
         // ulozenie poplatku do databazy
         log.info("Ukladam poplatok {} do databazy.", this);
     }
-
-    @Override
+    
     public String toString() {
         return "Poplatok{" +
                 "vyskaPoplatku=" + vyskaPoplatku +

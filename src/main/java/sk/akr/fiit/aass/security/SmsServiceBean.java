@@ -1,4 +1,4 @@
-package sk.akr.fiit.aass.ejb;
+package sk.akr.fiit.aass.security;
 
 import javax.ejb.Stateless;
 
