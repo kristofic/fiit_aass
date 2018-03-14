@@ -14,7 +14,7 @@ public class OperacieServiceBean implements OperacieService {
     @PersistenceContext
     private EntityManager entityManager;
 
-    @EJB
+    @EJB // <-- injektaz komponentu, je mozna aj cez setter
     private SmsService smsService;
 
     public void vytvorOperaciu(OperaciaTO operaciaTO) {
