@@ -1,10 +1,9 @@
 package sk.akr.fiit.aass.cmt;
 
-import javax.ejb.Stateless;
-import javax.ejb.TransactionAttribute;
-import javax.ejb.TransactionAttributeType;
+import static jakarta.ejb.TransactionAttributeType.REQUIRES_NEW;
 
-import static javax.ejb.TransactionAttributeType.REQUIRES_NEW;
+import jakarta.ejb.Stateless;
+import jakarta.ejb.TransactionAttribute;
 
 @Stateless
 public class SmsServiceBean implements SmsService {

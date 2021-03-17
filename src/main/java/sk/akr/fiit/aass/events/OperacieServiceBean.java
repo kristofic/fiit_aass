@@ -1,12 +1,11 @@
 package sk.akr.fiit.aass.events;
 
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.enterprise.event.Event;
+import jakarta.inject.Inject;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import sk.akr.fiit.aass.to.OperaciaTO;
-
-import javax.enterprise.context.RequestScoped;
-import javax.enterprise.event.Event;
-import javax.inject.Inject;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 
 @RequestScoped
 public class OperacieServiceBean implements OperacieService {

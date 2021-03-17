@@ -1,6 +1,6 @@
 package sk.akr.fiit.aass.cdi;
 
-import javax.enterprise.context.RequestScoped;
+import jakarta.enterprise.context.RequestScoped;
 
 @RequestScoped
 public class SmsServiceBean implements SmsService {

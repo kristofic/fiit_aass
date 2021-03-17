@@ -1,6 +1,6 @@
 package sk.akr.fiit.aass.security;
 
-import javax.ejb.Stateless;
+import jakarta.ejb.Stateless;
 
 @Stateless
 public class SmsServiceBean implements SmsService {

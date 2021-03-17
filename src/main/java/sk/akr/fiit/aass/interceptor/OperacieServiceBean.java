@@ -1,12 +1,11 @@
 package sk.akr.fiit.aass.interceptor;
 
+import jakarta.ejb.EJB;
+import jakarta.ejb.Stateless;
+import jakarta.interceptor.Interceptors;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import sk.akr.fiit.aass.to.OperaciaTO;
-
-import javax.ejb.EJB;
-import javax.ejb.Stateless;
-import javax.interceptor.Interceptors;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 
 @Stateless
 @Interceptors({AuditInterceptor.class}) // <-- aplikovanie interceptora (moze ich by aj viac) na konkretny komponent

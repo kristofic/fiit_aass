@@ -1,8 +1,7 @@
 package sk.akr.fiit.aass.bmt;
 
+import jakarta.ejb.Local;
 import sk.akr.fiit.aass.to.OperaciaTO;
-
-import javax.ejb.Local;
 
 @Local
 public interface OperacieService {

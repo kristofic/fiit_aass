@@ -1,13 +1,15 @@
 package sk.akr.fiit.aass.cmt;
 
+import static jakarta.ejb.TransactionAttributeType.REQUIRED;
+import static jakarta.ejb.TransactionManagementType.CONTAINER;
+
+import jakarta.ejb.EJB;
+import jakarta.ejb.Stateless;
+import jakarta.ejb.TransactionAttribute;
+import jakarta.ejb.TransactionManagement;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import sk.akr.fiit.aass.to.OperaciaTO;
-
-import javax.ejb.*;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-
-import static javax.ejb.TransactionAttributeType.REQUIRED;
-import static javax.ejb.TransactionManagementType.CONTAINER;
 
 @Stateless
 @TransactionManagement(CONTAINER) // <-- transakcie budu riadene kontajnerom (default)

@@ -1,7 +1,7 @@
 package sk.akr.fiit.aass.interceptor;
 
-import javax.ejb.Stateless;
-import javax.interceptor.Interceptors;
+import jakarta.ejb.Stateless;
+import jakarta.interceptor.Interceptors;
 
 @Stateless
 @Interceptors({AuditInterceptor.class})

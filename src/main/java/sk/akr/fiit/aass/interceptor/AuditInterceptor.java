@@ -1,12 +1,11 @@
 package sk.akr.fiit.aass.interceptor;
 
+import jakarta.annotation.Resource;
+import jakarta.ejb.EJBContext;
+import jakarta.interceptor.AroundInvoke;
+import jakarta.interceptor.InvocationContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import javax.annotation.Resource;
-import javax.ejb.EJBContext;
-import javax.interceptor.AroundInvoke;
-import javax.interceptor.InvocationContext;
 
 public class AuditInterceptor {
 

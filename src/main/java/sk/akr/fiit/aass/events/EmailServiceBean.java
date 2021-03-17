@@ -1,8 +1,8 @@
 package sk.akr.fiit.aass.events;
 
-import javax.enterprise.context.RequestScoped;
-import javax.enterprise.event.Observes;
-import javax.enterprise.inject.spi.EventMetadata;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.enterprise.event.Observes;
+import jakarta.enterprise.inject.spi.EventMetadata;
 
 @RequestScoped
 public class EmailServiceBean {
